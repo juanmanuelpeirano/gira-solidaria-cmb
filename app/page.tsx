@@ -28,7 +28,7 @@ export default function Home() {
               <span className="growing-logo-wrap">
                 <img
                   className="official-logo official-logo--growing"
-                  src="/assets/logos/creciendo-juntos.png"
+                  src="/assets/logos/creciendo-juntos-clean.png"
                   alt="Logo de Creciendo Juntos"
                   width="78"
                   height="48"
