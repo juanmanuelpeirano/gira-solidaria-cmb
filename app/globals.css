@@ -62,7 +62,13 @@ a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 .official-logos { display: flex; align-items: center; gap: .44rem; min-width: 0; height: 3.45rem; }
 .official-logo { display: block; max-width: 100%; mix-blend-mode: screen; object-fit: contain; }
 .official-logo--club { width: 2.45rem; height: 3.35rem; }
-.official-logo--growing { width: 4.2rem; height: 2.7rem; object-fit: cover; object-position: 48% 50%; }
+.official-logo--growing {
+  width: 5.45rem;
+  height: 3.15rem;
+  mix-blend-mode: normal;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1px rgba(255,255,255,.65));
+}
 .logo-separator { width: 1px; height: 1.6rem; background: rgba(255,255,255,.35); }
 .header-link {
   display: inline-flex; flex: 0 0 auto; align-items: center; gap: .45rem; min-height: 2.25rem; padding: .48rem .62rem;
@@ -190,7 +196,7 @@ h1 span { color: var(--red); }
 @media (min-width: 550px) {
   .hero-shell { padding-top: 1rem; }
   .official-logo--club { width: 2.7rem; height: 3.6rem; }
-  .official-logo--growing { width: 4.8rem; height: 3rem; }
+  .official-logo--growing { width: 5.9rem; height: 3.4rem; }
   .hero-copy { padding-top: 3.1rem; }
   .donation-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .donation-card { min-height: 11.2rem; }
