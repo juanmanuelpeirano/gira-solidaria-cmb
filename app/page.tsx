@@ -25,13 +25,15 @@ export default function Home() {
                 height="66"
               />
               <span className="logo-separator" aria-hidden="true" />
-              <img
-                className="official-logo official-logo--growing"
-                src="/assets/logos/creciendo-juntos.png"
-                alt="Logo de Creciendo Juntos"
-                width="78"
-                height="48"
-              />
+              <span className="growing-logo-wrap">
+                <img
+                  className="official-logo official-logo--growing"
+                  src="/assets/logos/creciendo-juntos.png"
+                  alt="Logo de Creciendo Juntos"
+                  width="78"
+                  height="48"
+                />
+              </span>
             </div>
             <a className="header-link" href="#la-gira">Conocé la gira <span aria-hidden="true">↓</span></a>
           </header>
