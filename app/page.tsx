@@ -27,7 +27,7 @@ export default function Home() {
               <span className="logo-separator" aria-hidden="true" />
               <img
                 className="official-logo official-logo--growing"
-                src="/assets/logos/creciendo-juntos.jpg"
+                src="/assets/logos/creciendo-juntos.png"
                 alt="Logo de Creciendo Juntos"
                 width="78"
                 height="48"
