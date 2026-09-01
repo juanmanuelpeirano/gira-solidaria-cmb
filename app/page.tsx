@@ -16,39 +16,37 @@ export default function Home() {
 
         <div className="hero-shell">
           <header className="site-header">
-            <a className="wordmark" href="#inicio" aria-label="Gira Solidaria 2026">
-              <span className="wordmark-mark" aria-hidden="true">GS</span>
-              <span>
-                <strong>GIRA SOLIDARIA</strong>
-                <small>CRECIENDO JUNTOS · 2026</small>
-              </span>
-            </a>
-            <a className="header-link" href="#la-gira">Conocé la gira</a>
+            <div className="official-logos" aria-label="Club Manuel Belgrano y Creciendo Juntos">
+              <img
+                className="official-logo official-logo--club"
+                src="/assets/logos/club-manuel-belgrano.jpg"
+                alt="Escudo del Club Manuel Belgrano"
+                width="52"
+                height="66"
+              />
+              <span className="logo-separator" aria-hidden="true" />
+              <img
+                className="official-logo official-logo--growing"
+                src="/assets/logos/creciendo-juntos.jpg"
+                alt="Logo de Creciendo Juntos"
+                width="78"
+                height="48"
+              />
+            </div>
+            <a className="header-link" href="#la-gira">Conocé la gira <span aria-hidden="true">↓</span></a>
           </header>
 
           <div className="hero-copy" id="inicio">
-            <div className="identity-row" aria-label="Identidad de la campaña">
-              <div className="identity-placeholder">
-                <span className="placeholder-ring" aria-hidden="true" />
-                <span>Escudo oficial<br />Club Manuel Belgrano</span>
-              </div>
-              <span className="identity-join" aria-hidden="true">+</span>
-              <div className="identity-placeholder">
-                <span className="placeholder-spark" aria-hidden="true" />
-                <span>Logo oficial<br />Creciendo Juntos</span>
-              </div>
-            </div>
-
             <p className="eyebrow">Proyecto solidario · Club Manuel Belgrano</p>
             <h1 id="campaign-title">GIRA<br /><span>SOLIDARIA</span></h1>
-            <p className="hero-meta">M16 Rugby · 6ta Hockey</p>
+            <p className="hero-meta">M16 Rugby · 6ta Hockey · 5ta Hockey Tira C</p>
             <p className="hero-destination">
               <span>El Refugio</span>
               Chajarí, Entre Ríos · 22—25 OCT. 2026
             </p>
             <p className="hero-summary">
-              Este octubre llevamos las donaciones reunidas por toda la comunidad del club
-              y compartimos unos días junto a El Refugio.
+              Este octubre llevaremos las donaciones reunidas por toda la comunidad del club
+              y compartiremos unos días junto a El Refugio.
             </p>
           </div>
 
@@ -69,7 +67,6 @@ export default function Home() {
                     <strong>{donation.name}</strong>
                     <span className="card-description">{donation.description}</span>
                     <span className="card-price">{donation.amount ? formatAmount(donation.amount) : 'A elección'}</span>
-                    <span className="card-action">{isReady ? 'Quiero aportar' : 'Link de pago próximo'}</span>
                   </>
                 );
 
@@ -97,7 +94,7 @@ export default function Home() {
             </div>
 
             <p className="donation-note" id="pago-pendiente">
-              Elegí una forma de colaborar. Tu aporte se destina a comprar los elementos
+              Elegí una forma de colaborar. Tu aporte se destinará a comprar los elementos
               necesarios para la Gira Solidaria.
             </p>
           </section>
@@ -117,11 +114,11 @@ export default function Home() {
           </div>
 
           <div className="story-copy">
-            <p>M16 de rugby y 6ta de hockey son parte de <strong>Creciendo Juntos</strong>, el proyecto solidario del Club Manuel Belgrano.</p>
-            <p>Del 22 al 25 de octubre la delegación viaja a Chajarí para visitar <strong>El Refugio</strong>, llevar lo reunido y compartir actividades con su comunidad.</p>
+            <p>M16 de rugby, 6ta de hockey y la tira C de 5ta de hockey son parte de <strong>Creciendo Juntos</strong>, el proyecto solidario del Club Manuel Belgrano.</p>
+            <p>Del 22 al 25 de octubre la delegación viajará a Chajarí para visitar <strong>El Refugio</strong>, llevar lo reunido y compartir actividades con su comunidad.</p>
             <div className="fact-list" aria-label="Datos de la gira">
               <div><span>Destino</span><strong>Chajarí<br />Entre Ríos</strong></div>
-              <div><span>Participan</span><strong>M16 Rugby<br />6ta Hockey</strong></div>
+              <div><span>Participan</span><strong>M16 Rugby<br />6ta · 5ta C Hockey</strong></div>
               <div><span>Fecha</span><strong>22—25<br />Octubre</strong></div>
             </div>
           </div>
@@ -136,7 +133,7 @@ export default function Home() {
         <ol className="steps">
           <li><span>01</span><h3>Elegís</h3><p>Una forma de colaborar con la gira.</p></li>
           <li><span>02</span><h3>Aportás</h3><p>Con Mercado Pago, desde tu celular.</p></li>
-          <li><span>03</span><h3>Lo llevamos</h3><p>La recaudación se transforma en donaciones para El Refugio.</p></li>
+          <li><span>03</span><h3>Lo llevaremos</h3><p>La recaudación se transformará en donaciones para El Refugio.</p></li>
         </ol>
       </section>
 
@@ -152,10 +149,10 @@ export default function Home() {
           <p>Proyecto Creciendo Juntos · Club Manuel Belgrano</p>
         </div>
         <div>
-          <p>M16 Rugby · 6ta Hockey</p>
+          <p>M16 Rugby · 6ta Hockey · 5ta Hockey Tira C</p>
           <p>Chajarí, Entre Ríos</p>
         </div>
-        <p className="footer-note">Los logos y las fotos oficiales se incorporan antes de publicar el QR.</p>
+        <p className="footer-note">Creciendo Juntos · Club Manuel Belgrano</p>
       </footer>
     </main>
   );

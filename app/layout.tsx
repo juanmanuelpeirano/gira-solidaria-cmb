@@ -4,11 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://gira-solidaria-cmb-2026.jpeirano.chatgpt.site'),
   title: 'Gira Solidaria 2026 | Creciendo Juntos',
-  description: 'Colaborá con la Gira Solidaria 2026 de Creciendo Juntos, Club Manuel Belgrano. M16 Rugby y 6ta Hockey viajan a El Refugio, Chajarí.',
+  description: 'Colaborá con la Gira Solidaria 2026 de Creciendo Juntos, Club Manuel Belgrano. M16 Rugby, 6ta Hockey y 5ta Hockey Tira C viajarán a El Refugio, Chajarí.',
   applicationName: 'Gira Solidaria 2026',
   openGraph: {
     title: 'Gira Solidaria 2026 | Creciendo Juntos',
-    description: 'M16 Rugby y 6ta Hockey viajan a Chajarí para compartir y llevar donaciones a El Refugio.',
+    description: 'M16 Rugby, 6ta Hockey y 5ta Hockey Tira C viajarán a Chajarí para compartir y llevar donaciones a El Refugio.',
     locale: 'es_AR',
     type: 'website',
     images: [
