@@ -58,13 +58,13 @@ a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 .hero-shell, .story-section, .closing-section, .site-footer { width: min(100% - 2.5rem, 73rem); margin: 0 auto; }
 .hero-shell { padding: .7rem 0 2.1rem; }
 
-.site-header { display: flex; align-items: center; justify-content: space-between; min-height: 3.7rem; gap: .7rem; }
-.official-logos { display: flex; align-items: center; gap: .44rem; min-width: 0; height: 3.45rem; }
+.site-header { display: flex; align-items: center; justify-content: space-between; min-height: 5.2rem; gap: .7rem; }
+.official-logos { display: flex; align-items: center; gap: .44rem; min-width: 0; height: 5.15rem; }
 .official-logo { display: block; max-width: 100%; mix-blend-mode: screen; object-fit: contain; }
-.official-logo--club { width: 2.45rem; height: 3.35rem; }
+.official-logo--club { width: 3.675rem; height: 5.025rem; }
 .official-logo--growing {
-  width: 5.45rem;
-  height: 3.15rem;
+  width: 8.175rem;
+  height: 4.725rem;
   mix-blend-mode: normal;
   object-fit: contain;
   filter: drop-shadow(0 0 1px rgba(255,255,255,.65));
@@ -195,8 +195,8 @@ h1 span { color: var(--red); }
 
 @media (min-width: 550px) {
   .hero-shell { padding-top: 1rem; }
-  .official-logo--club { width: 2.7rem; height: 3.6rem; }
-  .official-logo--growing { width: 5.9rem; height: 3.4rem; }
+  .official-logo--club { width: 4.05rem; height: 5.4rem; }
+  .official-logo--growing { width: 8.85rem; height: 5.1rem; }
   .hero-copy { padding-top: 3.1rem; }
   .donation-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .donation-card { min-height: 11.2rem; }
