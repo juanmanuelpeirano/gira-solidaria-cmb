@@ -54,7 +54,7 @@ export default function Home() {
           <div className="hero-copy" id="inicio">
             <p className="eyebrow">Proyecto solidario · Club Manuel Belgrano</p>
             <h1 id="campaign-title">GIRA<br /><span>SOLIDARIA</span></h1>
-            <p className="hero-meta">M16 Rugby · 6ta Hockey · 5ta Hockey Tira C</p>
+            <p className="hero-meta">M16 Rugby · Planteles de 6tas y 5tas de Hockey</p>
             <p className="hero-destination">
               <span>El Refugio</span>
               Chajarí, Entre Ríos · 22—25 OCT. 2026
@@ -135,11 +135,11 @@ export default function Home() {
           </div>
 
           <div className="story-copy">
-            <p>M16 de rugby, 6ta de hockey y la tira C de 5ta de hockey son parte de <strong>Creciendo Juntos</strong>, el proyecto solidario del Club Manuel Belgrano.</p>
+            <p>M16 Rugby y los planteles de 6tas y 5tas de Hockey son parte de <strong>Creciendo Juntos</strong>, el proyecto solidario del Club Manuel Belgrano.</p>
             <p>Del 22 al 25 de octubre la delegación viajará a Chajarí para visitar <strong>El Refugio</strong>, llevar lo reunido y compartir actividades con su comunidad.</p>
             <div className="fact-list" aria-label="Datos de la gira">
               <div><span>Destino</span><strong>Chajarí<br />Entre Ríos</strong></div>
-              <div><span>Participan</span><strong>M16 Rugby<br />6ta · 5ta C Hockey</strong></div>
+              <div><span>Participan</span><strong>M16 Rugby<br />Planteles de 6tas y 5tas de Hockey</strong></div>
               <div><span>Fecha</span><strong>22—25<br />Octubre</strong></div>
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function Home() {
           <p>Proyecto Creciendo Juntos · Club Manuel Belgrano</p>
         </div>
         <div>
-          <p>M16 Rugby · 6ta Hockey · 5ta Hockey Tira C</p>
+          <p>M16 Rugby · Planteles de 6tas y 5tas de Hockey</p>
           <p>Chajarí, Entre Ríos</p>
         </div>
         <p className="footer-note">Creciendo Juntos · Club Manuel Belgrano</p>
