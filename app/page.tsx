@@ -7,6 +7,21 @@ const formatAmount = (amount: number) =>
     maximumFractionDigits: 0,
   }).format(amount);
 
+const galleryPhotos = [
+  {
+    src: '/assets/photos/gira-entrega-1.png',
+    alt: 'Integrantes de la gira entregando donaciones en El Refugio',
+  },
+  {
+    src: '/assets/photos/gira-comunidad-2.png',
+    alt: 'Familias y voluntarios compartiendo una jornada comunitaria',
+  },
+  {
+    src: '/assets/photos/gira-equipo-3.png',
+    alt: 'Grupo de la gira solidaria frente a la escuelita El Refugio',
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -108,8 +123,14 @@ export default function Home() {
         </div>
 
         <div className="story-grid">
-          <div className="story-visual" role="img" aria-label="Espacio preparado para una fotografía real de la gira">
-            <span className="story-visual-label">Foto de la gira<br />próximamente</span>
+          <div className="story-visual story-gallery" role="region" aria-label="Fotografías de la gira solidaria">
+            <div className="story-gallery-track">
+              {[...galleryPhotos, ...galleryPhotos].map((photo, index) => (
+                <div className="story-gallery-slide" key={photo.src + index} aria-hidden={index >= galleryPhotos.length}>
+                  <img src={photo.src} alt={index < galleryPhotos.length ? photo.alt : ''} />
+                </div>
+              ))}
+            </div>
             <span className="story-visual-caption">Club Manuel Belgrano<br />Creciendo Juntos</span>
           </div>
 

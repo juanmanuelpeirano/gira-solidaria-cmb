@@ -5,7 +5,7 @@ export type DonationOption = {
   description: string;
   amount: number | null;
   paymentLink: string;
-  icon: 'notebook' | 'milk' | 'pencil' | 'food' | 'shoe' | 'heart';
+  icon: 'cookie' | 'notebook' | 'milk' | 'pencil' | 'food' | 'shoe' | 'heart';
   accent: 'red' | 'blue' | 'cream' | 'ink' | 'rose';
 };
 
@@ -14,10 +14,10 @@ export type DonationOption = {
  * Dejamos paymentLink vacío hasta recibir los Links de Pago definitivos de Mercado Pago.
  */
 export const donationOptions: DonationOption[] = [
-  { id: 'cuaderno', category: 'Educación', name: '1 cuaderno', description: 'Una ayuda concreta para acompañar el aprendizaje.', amount: 2000, paymentLink: 'https://mpago.la/1En9Agu', icon: 'notebook', accent: 'red' },
-  { id: 'leches', category: 'Alimentos', name: '2 leches larga vida', description: 'Un aporte para las familias que visitaremos.', amount: 3500, paymentLink: 'https://mpago.la/1nTySuH', icon: 'milk', accent: 'blue' },
-  { id: 'utiles', category: 'Educación', name: 'Kit de útiles', description: 'Elementos para aprender, crear y compartir.', amount: 5000, paymentLink: 'https://mpago.la/2X73Ji7', icon: 'pencil', accent: 'cream' },
-  { id: 'alimentos', category: 'Alimentos', name: 'Alimentos no perecederos', description: 'Colaborá con una compra para la gira.', amount: 7500, paymentLink: 'https://mpago.la/1kdxHeZ', icon: 'food', accent: 'ink' },
-  { id: 'indumentaria', category: 'Deporte', name: 'Indumentaria / zapatillas', description: 'Una forma de sumar abrigo, ropa y movimiento.', amount: 10000, paymentLink: 'https://mpago.la/1gPfZ1S', icon: 'shoe', accent: 'rose' },
-  { id: 'otro-monto', category: 'A elección', name: 'Otro monto', description: 'Elegí el aporte que te quede cómodo.', amount: null, paymentLink: 'https://link.mercadopago.com.ar/girarugbycmb', icon: 'heart', accent: 'red' },
+  { id: 'galletitas', category: 'Alimentos', name: '2 paquetes de galletitas', description: 'Para compartir una merienda.', amount: 3000, paymentLink: 'https://mpago.la/2a1KBYj', icon: 'cookie', accent: 'red' },
+  { id: 'leches', category: 'Alimentos', name: '2 leches larga vida', description: 'Para acompañar las comidas del día.', amount: 5000, paymentLink: 'https://mpago.la/1ADn5AB', icon: 'milk', accent: 'blue' },
+  { id: 'cuadernos', category: 'Educación', name: '2 cuadernos', description: 'Para seguir aprendiendo y creando.', amount: 7000, paymentLink: 'https://mpago.la/2bCjdEV', icon: 'notebook', accent: 'cream' },
+  { id: 'kit-utiles', category: 'Educación', name: 'Kit de útiles escolares', description: 'Elementos para aprender, crear y compartir.', amount: 10000, paymentLink: 'https://mpago.la/2BUrbTV', icon: 'pencil', accent: 'ink' },
+  { id: 'indumentaria', category: 'Deporte', name: 'Indumentaria deportiva', description: 'Para acompañar el juego y el movimiento.', amount: 20000, paymentLink: 'https://mpago.la/2bFmYES', icon: 'shoe', accent: 'rose' },
+  { id: 'otro-monto', category: 'A elección', name: 'Otro monto', description: 'Elegí el aporte que te quede cómodo.', amount: null, paymentLink: 'https://link.mercadopago.com.ar/cmbgirasolidaria', icon: 'heart', accent: 'red' },
 ];
