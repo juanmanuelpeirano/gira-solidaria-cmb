@@ -1,49 +1,62 @@
-# Gira Solidaria 2026
+# Gira Solidaria CMB 2026
 
-Landing mobile-first de **Creciendo Juntos** y Club Manuel Belgrano. El objetivo es que una persona escanee un QR, elija una forma de colaborar y pase al pago de Mercado Pago sin pasos extra.
+Sitio web de la Gira Solidaria 2026 del Club Manuel Belgrano y Creciendo Juntos.
 
-## Correr el sitio
+La página está pensada principalmente para celulares: quien escanea el código QR puede elegir un aporte y continuar directamente al Link de Pago correspondiente de Mercado Pago.
 
-    npm install
-    npm run dev
+## Sitio publicado
 
-Abrí la URL que muestra la terminal.
+[Ver la web de la Gira Solidaria](https://gira-solidaria-cmb-2026.jpeirano.chatgpt.site)
 
-## Editar aportes y links de Mercado Pago
+## Qué incluye
 
-Todo está centralizado en app/data/donations.ts.
+- Seis formas de colaborar, ordenadas por monto.
+- Links de Pago de Mercado Pago configurados por aporte.
+- Diseño adaptado a celular y escritorio.
+- Identidad visual del Club Manuel Belgrano y Creciendo Juntos.
+- Carrusel automático con fotos de la gira en la sección “La gira”.
 
-Para cada aporte podés cambiar:
+## Ejecutar el proyecto
 
-- name: nombre visible;
-- description: texto corto;
-- amount: importe en pesos;
-- paymentLink: Link de Pago de Mercado Pago;
-- icon y accent: detalle visual de la tarjeta.
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
 
-Cuando recibas los Links de Pago, pegá cada URL en su paymentLink. Mientras esté vacío, la tarjeta informa que el link está pendiente y no intenta abrir un checkout.
+Para generar una versión lista para publicar:
 
-## Reemplazar los logos y las fotos
+\`\`\`bash
+npm run build
+\`\`\`
 
-Los lugares preparados están dentro de public/assets/:
+## Editar aportes y Links de Pago
 
-- logos/: escudo oficial del Club Manuel Belgrano y logo de Creciendo Juntos;
-- photos/: fotografías reales y autorizadas de la gira.
+Toda la configuración está centralizada en [app/data/donations.ts](app/data/donations.ts).
 
-Cada carpeta incluye un README con los nombres sugeridos. Luego de agregar los recursos, actualizá las referencias visuales de app/page.tsx y app/globals.css.
+Cada aporte contiene:
 
-## Publicar
+- \`name\`: nombre visible.
+- \`description\`: texto breve de la tarjeta.
+- \`amount\`: monto en pesos argentinos.
+- \`paymentLink\`: Link de Pago de Mercado Pago.
+- \`icon\` y \`accent\`: ícono y color de la tarjeta.
 
-1. Subí el proyecto a tu repositorio de GitHub cuando estés conforme.
-2. En Vercel, importá ese repositorio y elegí los valores detectados por defecto.
-3. Al finalizar el deploy, verificá desde un teléfono que los Links de Pago abran correctamente.
-4. Recién entonces generá o imprimí el QR, apuntando siempre a la URL de esta web y nunca a un Link de Pago individual.
+Para reemplazar los Links de Pago en el futuro, sólo hay que modificar el campo \`paymentLink\` de cada aporte. No se requieren credenciales, backend ni integración con la API de Mercado Pago.
 
-## Antes de comunicar la URL
+## Fotos y logos
 
-Confirmá que ya se incorporaron:
+- Los logos se encuentran en [public/assets/logos](public/assets/logos).
+- Las fotos del carrusel se encuentran en [public/assets/photos](public/assets/photos).
 
-- los dos logos oficiales;
-- las fotografías autorizadas;
-- los seis Links de Pago correctos;
-- la imagen de vista previa para WhatsApp e Instagram.
+Usá imágenes autorizadas por el Club y la organización antes de incorporar nuevos recursos.
+
+## Tecnologías
+
+- React
+- Vinext / Vite
+- TypeScript
+- CSS
+
+## Seguridad
+
+Este repositorio no contiene credenciales ni claves privadas. Los pagos se procesan íntegramente en Mercado Pago mediante Links de Pago.
